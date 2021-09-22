@@ -1,0 +1,10 @@
+# Exercise 2: Using Makefiles to Build
+CFLAGS=-Wall -g
+
+clean:
+	rm -f ex1
+	rm -f ex3
+
+all: 
+	make ex1
+	make ex3
