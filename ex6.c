@@ -1,1 +1,1 @@
-ex6.c
+//Memorizing C Operators 

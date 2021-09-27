@@ -1,7 +1,7 @@
 //Variables and Types 
 #include <stdio.h>
 
-int main(intargc, char*arv[]) 
+int main(int argc, char *arv[]) 
 
 {
 	int distance = 100;
@@ -22,9 +22,9 @@ int main(intargc, char*arv[])
 	int bugs = 100;
 	double bug_rate = 1.2;
 
-	print("You have %d bugs at the imaginary rate of %f. \n", bugs, bug_rate);
+	printf("You have %d bugs at the imaginary rate of %f. \n", bugs, bug_rate);
 
-	long universe_of_defects = 1L * 1024L * 1024L * 1024L;
+	unsigned long universe_of_defects = 1L * 1024L * 1024L * 1024L;
 	printf("The entire universe has %ld bugs.\n", universe_of_defects);
 
 	double expected_bugs = bugs*bug_rate;
@@ -43,4 +43,10 @@ int main(intargc, char*arv[])
 	return 0;
 
 }
- 
+
+//Extra Credit
+	// long -> unsigned long 
+		// unsigned -> unsigned char is a character datatype where the variable consumes all the 
+		// 8 bits of the memory and there is no sign bit (which is there in signed char). So it means that the range of unsigned char data type ranges from 0 to 255.
+ 	// why can you multiply a char and an int in c?
+		// a symbol between '' is of type char. char is a numeric type - same as int, but shorter. it holds a numerical representation of the symbol. multiplying with an int gives an int. 
